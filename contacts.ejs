@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Portfolio</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Me</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/contacts">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section>
+        <h2>Get in Touch</h2>
+        
+        <!-- Success message, but without relying on server-side query params -->
+        <p class="success-message">Thank you for visiting. Feel free to reach out to me!</p>
+
+        <!-- Contact Form -->
+        <form action="/submit-contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me on <a href="https://github.com/Jibzzz6" target="_blank">GitHub</a> or <a href="https://www.linkedin.com/in/jibz-arventh-kaynes-pinili-743065337/" target="_blank">LinkedIn</a>.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+

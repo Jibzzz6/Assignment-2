@@ -1,0 +1,158 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #001f3f; /* Navy blue background */
+    color: #f0f0f0; /* Light text color */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Full-screen layout */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #00264d; /* Darker navy */
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #00aaff;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #00aaff; /* Light blue for headings */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #00aaff;
+    color: #001f3f;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+section {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #00c2ff;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #d4d4d4;
+}
+
+/* Form Styling in Contacts Page */
+form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #003366;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    color: #f0f0f0;
+    margin: 0.5rem 0 0.2rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #00aaff;
+    border-radius: 5px;
+    background-color: #002d5b;
+    color: #f0f0f0;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #00aaff;
+    color: #001f3f;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #00c2ff;
+}
+
+/* Footer */
+footer {
+    background-color: #00264d;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #00aaff;
+    color: #d4d4d4;
+}
+
+footer a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
